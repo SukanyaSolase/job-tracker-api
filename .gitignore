@@ -1,0 +1,14 @@
+# env / secrets
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+
+# alembic
+*.log
+
+# OS
+.DS_Store
