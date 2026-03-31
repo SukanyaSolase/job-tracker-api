@@ -2,6 +2,8 @@
 
 ![CI](https://github.com/SukanyaSolase/job-tracker-api/actions/workflows/ci.yml/badge.svg?branch=main)
 
+> **Live demo:** https://job-tracker-api-hiz1.onrender.com/docs
+
 A production-style REST API for tracking job applications — built with **FastAPI**, **PostgreSQL**, and **SQLAlchemy**. Features JWT authentication, full CRUD, status filtering, pagination, and CSV export.
 
 ---
