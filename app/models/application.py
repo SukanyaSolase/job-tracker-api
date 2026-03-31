@@ -1,6 +1,7 @@
 from sqlalchemy import String, DateTime, func, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from typing import Optional
+from datetime import datetime
 
 from app.db.base import Base
 
@@ -21,8 +22,8 @@ class Application(Base):
     link: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)
     notes: Mapped[Optional[str]] = mapped_column(String(2000), nullable=True)
 
-    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
-    updated_at: Mapped["DateTime"] = mapped_column(
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
 
