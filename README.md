@@ -1,6 +1,6 @@
 # Job Tracker API
 
-![CI](https://github.com/SukanyaSolase/job-tracker-api/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/SukanyaSolase/job-tracker-api/actions/workflows/ci.yml/badge.svg?branch=main)
 
 A production-style REST API for tracking job applications — built with **FastAPI**, **PostgreSQL**, and **SQLAlchemy**. Features JWT authentication, full CRUD, status filtering, pagination, and CSV export.
 
