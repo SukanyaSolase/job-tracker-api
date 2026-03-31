@@ -6,9 +6,8 @@ from sqlalchemy import create_engine, pool
 from app.core.config import settings
 from app.db.base import Base
 
-# Import models so Alembic can see metadata (no circular import here)
-import app.models.user  # noqa: F401
-import app.models.application  # noqa: F401
+from app.models.user import User  # noqa: F401
+from app.models.application import Application  # noqa: F401
 
 config = context.config
 
